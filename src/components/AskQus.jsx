@@ -2,9 +2,9 @@ import React from 'react';
 
 const AskQus = () => {
     return (
-        <div>
-            <div>
-                <h2>Most Common Question about our WebSite</h2>
+        <div className='max-w-7xl mx-auto'>
+            <div className='space-y-4'>
+                <h2 className='text-5xl font-bold text-center py-10 text-emerald-950'>Most Common Question about our WebSite</h2>
                 {/* 1 */}
                 <div className="collapse collapse-arrow bg-base-100 border border-base-300">
                     <input type="radio" name="my-accordion-2" defaultChecked />

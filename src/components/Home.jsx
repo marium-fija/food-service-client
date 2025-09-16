@@ -2,6 +2,8 @@ import React from 'react';
 import Banner from './Banner';
 import FeaturedServices from './FeaturedServices';
 import MeetPartners from './MeetPartners';
+import AskQus from './AskQus';
+import CountUp from './CountUp';
 
 const Home = () => {
     return (
@@ -9,6 +11,8 @@ const Home = () => {
             <Banner></Banner>
             <FeaturedServices></FeaturedServices>
             <MeetPartners></MeetPartners>
+            <CountUp></CountUp>
+            <AskQus></AskQus>
         </div>
     );
 };

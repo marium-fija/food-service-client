@@ -73,7 +73,7 @@ const MyReviews = () => {
         ) : (
           <div className="space-y-4">
             {reviews.map(review => (
-              <div key={review.reviewId} className="border border-gray-400 shadow-2xl rounded-xl p-4 shadow flex flex-col space-y-2">
+              <div key={review.reviewId} className="border border-gray-400 shadow-2xl rounded-xl p-4  flex flex-col space-y-2">
                 <p><strong>Service : </strong> {review.serviceTitle}</p>
                 <p><strong>Review : </strong> {review.reviewText}</p>
                 <p><strong>Rating : </strong> {review.rating}</p>
