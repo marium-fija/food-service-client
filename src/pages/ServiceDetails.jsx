@@ -23,7 +23,7 @@ const ServiceDetails = () => {
   //  Load single service
   useEffect(() => {
     axios
-      .get(`https://food-service-server-sigma.vercel.app/services/${id}`)
+      .get(`https://food-service-server-nq3l8fsbw-mariums-projects-1a2166bf.vercel.app/services/${id}`)
       .then((res) => setService(res.data))
       .catch((err) => console.log(err));
   }, [id]);
@@ -49,7 +49,7 @@ const ServiceDetails = () => {
       reviewDate: new Date().toLocaleDateString(),
     };
 
-    axios.post(`https://food-service-server-sigma.vercel.app/services/${id}/reviews`, newReview)
+    axios.post(`https://food-service-server-nq3l8fsbw-mariums-projects-1a2166bf.vercel.app/services/${id}/reviews`, newReview)
       .then((res) => {
         if (res.data.success) {
           Swal.fire("Success!", "Review Added Successfully!", "success");

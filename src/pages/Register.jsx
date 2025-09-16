@@ -59,7 +59,7 @@ const Register = () => {
 };
 
                    
-                    axios.post("https://food-service-server-sigma.vercel.app/users", userProfile)
+                    axios.post("https://food-service-server-nq3l8fsbw-mariums-projects-1a2166bf.vercel.app/users", userProfile)
                         .then(res => {
                             Swal.fire({
                                 icon: "success",
@@ -95,7 +95,7 @@ const Register = () => {
                     lastSignInTime: result.user?.metadata?.lastSignInTime
                 };
 
-                axios.post("https://food-service-server-sigma.vercel.app/users", userProfile)
+                axios.post("https://food-service-server-nq3l8fsbw-mariums-projects-1a2166bf.vercel.app/users", userProfile)
                     .then(res => {
                         Swal.fire({
                             icon: "success",

@@ -8,7 +8,7 @@ const FeaturedServices = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() =>{
-    axios.get("https://food-service-server-sigma.vercel.app/services")
+    axios.get("https://food-service-server-nq3l8fsbw-mariums-projects-1a2166bf.vercel.app/services")
     .then(res => {
         setServices(res.data);
         setLoading(false);

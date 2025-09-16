@@ -21,7 +21,7 @@ const MyServices = () => {
     if (!user?.email) return;
 
     axios
-      .get(`https://food-service-server-sigma.vercel.app/my-services/${user.email}`)
+      .get(`https://food-service-server-nq3l8fsbw-mariums-projects-1a2166bf.vercel.app/my-services/${user.email}`)
       .then(res => setServices(res.data))
       .catch(err => console.log(err));
   }, [user]);
@@ -36,7 +36,7 @@ const MyServices = () => {
       confirmButtonText: 'Yes, delete it!'
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`https://food-service-server-sigma.vercel.app/services/${id}`)
+        axios.delete(`https://food-service-server-nq3l8fsbw-mariums-projects-1a2166bf.vercel.app/services/${id}`)
           .then(res => {
             setServices(prev => prev.filter(s => s._id !== id));
             Swal.fire('Deleted!', 'Your service has been deleted.', 'success');
@@ -53,7 +53,7 @@ const MyServices = () => {
   };
 
   const saveUpdate = () => {
-    axios.put(`https://food-service-server-sigma.vercel.app/services/${editingService._id}`, updatedData)
+    axios.put(`https://food-service-server-nq3l8fsbw-mariums-projects-1a2166bf.vercel.app/services/${editingService._id}`, updatedData)
       .then(res => {
         setServices(prev => prev.map(s => s._id === editingService._id ? updatedData : s));
         setEditingService(null);
