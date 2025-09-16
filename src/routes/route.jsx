@@ -11,6 +11,7 @@ import ServiceDetails from '../pages/ServiceDetails';
 import ErrorPage from '../pages/ErrorPage';
 import MyServices from '../pages/MyServices';
 import MyReviews from '../pages/MyReviews';
+import PrivateRoute from '../provider/PrivateRoute'
 
 const route = createBrowserRouter([
     {
@@ -44,19 +45,28 @@ const route = createBrowserRouter([
     },
     {
         path: "/addServices",
-        element: <AddService></AddService>
+        element: 
+        <PrivateRoute>
+            <AddService></AddService>
+        </PrivateRoute>   
     },
     {
         path: "/services/:id",
-        element: <ServiceDetails></ServiceDetails>,
+        element: <PrivateRoute>
+            <ServiceDetails></ServiceDetails>
+        </PrivateRoute>
     },
     {
         path: "/myServices",
-        element: <MyServices></MyServices>
+        element: <PrivateRoute>
+            <MyServices></MyServices>
+        </PrivateRoute>
     },
     {
         path: "/reviews",
-        element: <MyReviews></MyReviews>
+        element: <PrivateRoute>
+            <MyReviews></MyReviews>
+        </PrivateRoute>
     },
     {
         path: "/*",

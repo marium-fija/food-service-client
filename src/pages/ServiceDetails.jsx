@@ -5,6 +5,7 @@ import AuthContext from '../provider/AuthContext';
 import { Link, useParams } from 'react-router';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Rating from 'react-rating';
 
 
 const ServiceDetails = () => {
@@ -49,7 +50,7 @@ const ServiceDetails = () => {
 
     axios.post(`http://localhost:3000/services/${id}/reviews`, newReview)
       .then((res) => {
-        if (res.data.modifiedCount > 0 || res.data.acknowledged) {
+        if (res.data.success) {
           Swal.fire("Success!", "Review Added Successfully!", "success");
           setService((prev) => ({
             ...prev,
@@ -93,13 +94,13 @@ const ServiceDetails = () => {
 </div>
 <div className='max-w-7xl mx-auto my-20 p-5'>
      {/* Reviews Section */}
-     <div className='bg-gray-100 p-4'>
+     <div className='bg-gray-100 p-5 rounded-xl'>
          <h3 className="text-xl font-bold my-3">
-        Reviews ({service.reviews?.length || 0})
+        Reviews ( {service.reviews?.length || 0} )
       </h3>
       <div className="space-y-3 mt-3">
         {service.reviews?.map((r, i) => (
-          <div key={i} className="border p-3 rounded">
+          <div key={i} className="border border-cyan-700 shadow-xl shadow-gray-300 p-3 rounded-xl">
             <div className="flex items-center gap-2">
               <img
                 src={r.userPhoto}
@@ -108,35 +109,40 @@ const ServiceDetails = () => {
               />
               <span className="font-semibold">{r.userName}</span>
             </div>
-            {/* <Rating initialRating={r.rating} readonly emptySymbol="☆" fullSymbol="★" /> */}
+            <Rating
+  initialRating={r.rating}
+  readonly
+  emptySymbol={<span className="text-2xl text-gray-300">☆</span>}
+  fullSymbol={<span className="text-2xl text-yellow-400">★</span>}
+/>
             <p>{r.reviewText}</p>
-            <small className="text-gray-500">{r.reviewDate}</small>
+            <p>{r.rating}</p>
           </div>
         ))}
       </div>
      </div>
 
       {/* Add Review Form */}
-      <div className="mt-6">
+      <div className="bg-gray-100 p-5 rounded-xl mt-6">
         <h4 className="font-semibold">Add Your Review</h4>
         {user ? (
           <>
             <textarea
-              className="w-full border rounded p-2 mt-2"
+              className="w-full border rounded-xl p-2 mt-2"
               rows="3"
               value={reviewText}
               onChange={(e) => setReviewText(e.target.value)}
             ></textarea>
-            {/* <Rating
-              initialRating={rating}
-              onClick={(value) => setRating(value)}
-              emptySymbol="☆"
-              fullSymbol="★"
-            /> */}
+            <Rating
+  initialRating={rating}
+  onChange={(value) => setRating(value)}
+  emptySymbol={<span className="text-2xl text-gray-300">☆</span>}
+  fullSymbol={<span className="text-2xl text-yellow-400">★</span>}
+/>
             <br />
             <button
               onClick={handleAddReview}
-              className="bg-blue-600 text-white px-4 py-2 rounded mt-2"
+              className="bg-indigo-500  text-white px-4 py-2 rounded-full mt-2"
             >
               Add Review
             </button>

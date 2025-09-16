@@ -73,7 +73,7 @@ const MyServices = () => {
       {services.length === 0 ? (
         <p className="text-gray-500">You haven't shared any services yet.</p>
       ) : (
-        <table className="table-auto w-full  shadow-2xl rounded-xl">
+        <table className="table-auto border rounded-2xl border-gray-400 w-full  shadow-2xl">
           <thead>
             <tr className="bg-blue-100">
               <th className=" px-4 py-2">Image</th>
@@ -144,7 +144,7 @@ const MyServices = () => {
               className="w-full border p-2 mb-3 rounded-xl"
             />
             <div className="flex justify-end space-x-2">
-              <button className="px-4 py-2 bg-pink-400 hover:bg-pink-500 rounded-xl" onClick={() => setEditingService(null)}>Cancel</button>
+              <button className="px-4 py-2 bg-gray-600 text-white hover:bg-gray-800 rounded-xl" onClick={() => setEditingService(null)}>Cancel</button>
               <button className="px-4 py-2 bg-indigo-400 hover:bg-indigo-500 text-white rounded-xl" onClick={saveUpdate}>Save</button>
             </div>
           </div>

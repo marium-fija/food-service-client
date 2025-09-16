@@ -43,7 +43,7 @@ const FeaturedServices = () => {
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-800">{service.description}</p>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-600">Price: {service.price} BDT</p>
 
-        <Link to="/service-Details" className='btn btn-primary rounded-3xl'> See more <FaArrowRight /></Link>
+        <Link to={`/services/${service._id}`} className='btn btn-primary rounded-3xl'> See more <FaArrowRight /></Link>
     </div>
 </div>
 ))}
