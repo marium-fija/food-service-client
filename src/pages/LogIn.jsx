@@ -23,7 +23,7 @@ const LogIn = () => {
                     email: result.user.email,
                     lastSignInTime: new Date().toISOString()
                 };
-                axios.patch("http://localhost:3000/users", userInfo)
+                axios.patch("https://food-service-server-sigma.vercel.app/users", userInfo)
                     .then(() => {
                         Swal.fire("Success!", "Login Successful!", "success");
                         navigate(location.state?.from || "/");
@@ -49,7 +49,7 @@ const LogIn = () => {
                     lastSignInTime: new Date().toISOString()
                 };
 
-                axios.post("http://localhost:3000/users", userInfo)
+                axios.post("https://food-service-server-sigma.vercel.app/users", userInfo)
                     .then(() => {
                         Swal.fire("Success!", "Google Login Successful!", "success");
                         navigate(location.state?.from || "/");

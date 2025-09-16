@@ -26,7 +26,7 @@ const AddService = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:3000/add-service", formData);
+      const res = await axios.post("https://food-service-server-sigma.vercel.app/add-service", formData);
 
       console.log(res.data);
       

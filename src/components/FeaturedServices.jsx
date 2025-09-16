@@ -8,7 +8,7 @@ const FeaturedServices = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() =>{
-    axios.get("http://localhost:3000/services")
+    axios.get("https://food-service-server-sigma.vercel.app/services")
     .then(res => {
         setServices(res.data);
         setLoading(false);

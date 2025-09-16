@@ -18,7 +18,7 @@ const MyReviews = () => {
   useEffect(() => {
     if (!user?.email) return;
 
-    axios.get(`http://localhost:3000/my-reviews/${user.email}`)
+    axios.get(`https://food-service-server-sigma.vercel.app/my-reviews/${user.email}`)
       .then(res => setReviews(res.data))
       .catch(err => console.log(err));
   }, [user]);
@@ -33,7 +33,7 @@ const MyReviews = () => {
       confirmButtonText: 'Yes, delete it!'
     }).then(result => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:3000/services/${serviceId}/reviews/${reviewId}`)
+        axios.delete(`https://food-service-server-sigma.vercel.app/services/${serviceId}/reviews/${reviewId}`)
           .then(() => {
             setReviews(prev => prev.filter(r => r.reviewId !== reviewId));
             Swal.fire('Deleted!', 'Your review has been deleted.', 'success');
@@ -51,7 +51,7 @@ const MyReviews = () => {
 
   const saveUpdate = () => {
     axios.put(
-      `http://localhost:3000/services/${editingReview.serviceId}/reviews/${editingReview.reviewId}`,
+      `https://food-service-server-sigma.vercel.app/services/${editingReview.serviceId}/reviews/${editingReview.reviewId}`,
       updatedData
     ).then(() => {
       setReviews(prev => prev.map(r => r.reviewId === editingReview.reviewId ? {...r, ...updatedData} : r));

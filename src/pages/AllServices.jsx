@@ -12,7 +12,7 @@ const AllServices = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/all-services")
+    axios.get("https://food-service-server-sigma.vercel.app/all-services")
     .then(res => {
         setServices(res.data);
         setLoading(false);

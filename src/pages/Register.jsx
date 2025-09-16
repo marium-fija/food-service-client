@@ -59,7 +59,7 @@ const Register = () => {
 };
 
                    
-                    axios.post("http://localhost:3000/users", userProfile)
+                    axios.post("https://food-service-server-sigma.vercel.app/users", userProfile)
                         .then(res => {
                             Swal.fire({
                                 icon: "success",
@@ -95,7 +95,7 @@ const Register = () => {
                     lastSignInTime: result.user?.metadata?.lastSignInTime
                 };
 
-                axios.post("http://localhost:3000/users", userProfile)
+                axios.post("https://food-service-server-sigma.vercel.app/users", userProfile)
                     .then(res => {
                         Swal.fire({
                             icon: "success",
