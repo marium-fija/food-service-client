@@ -10,7 +10,7 @@ const AddService = () => {
     const [formData, setFormData] = useState({
     foodImg: "",
     foodTitle: "",
-    companyName: "",
+    restaurantName: "",
     website: "",
     description: "",
     category: "",
@@ -28,6 +28,8 @@ const AddService = () => {
     try {
       const res = await axios.post("http://localhost:3000/add-service", formData);
 
+      console.log(res.data);
+      
       if (res.data.success) {
         Swal.fire({
           icon: "success",
@@ -37,6 +39,8 @@ const AddService = () => {
         });
         e.target.reset(); 
       } else {
+        console.log(res.data.message);
+        
         Swal.fire({
           icon: "error",
           title: "Oops...",
@@ -79,8 +83,8 @@ const AddService = () => {
           />
           <input
             type="text"
-            name="companyName"
-            placeholder="Company Name"
+            name="restaurantName"
+            placeholder="restaurantName"
             onChange={handleChange}
             className="w-full border rounded px-3 py-2"
             required
