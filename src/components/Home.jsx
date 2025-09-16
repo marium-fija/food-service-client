@@ -3,7 +3,7 @@ import Banner from './Banner';
 import FeaturedServices from './FeaturedServices';
 import MeetPartners from './MeetPartners';
 import AskQus from './AskQus';
-import CountUp from './CountUp';
+import Counter from './Counter';
 
 const Home = () => {
     return (
@@ -11,7 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <FeaturedServices></FeaturedServices>
             <MeetPartners></MeetPartners>
-            <CountUp></CountUp>
+            <Counter></Counter>
             <AskQus></AskQus>
         </div>
     );

@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { TiDelete } from "react-icons/ti";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
+import Loading from './Loading';
 
 const MyReviews = () => {
     const { user } = useContext(AuthContext);
@@ -59,7 +60,8 @@ const MyReviews = () => {
     }).catch(() => Swal.fire('Error!', 'Failed to update review', 'error'));
   };
 
-  if (!user) return <p className="text-center mt-10 text-red-500">Please login to see your reviews.</p>;
+  if (!user) 
+    return <Loading></Loading>;
     return (
         <div>
             <header>

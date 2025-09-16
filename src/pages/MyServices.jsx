@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { TiDelete } from "react-icons/ti";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
+import Loading from './Loading';
 
 const MyServices = () => {
       const { user } = useContext(AuthContext);
@@ -61,7 +62,8 @@ const MyServices = () => {
       .catch(() => Swal.fire('Error!', 'Failed to update service', 'error'));
   };
 
-  if (!user) return <p className="text-center mt-10 text-red-500">Please login to see your services.</p>;
+  if (!user) 
+    return <Loading></Loading>;
     return (
         <div>
             <header>

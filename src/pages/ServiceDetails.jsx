@@ -6,6 +6,7 @@ import { Link, useParams } from 'react-router';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Rating from 'react-rating';
+import Loading from './Loading';
 
 
 const ServiceDetails = () => {
@@ -65,7 +66,8 @@ const ServiceDetails = () => {
       });
   };
 
-  if (!service) return <p className="text-center mt-10">Loading...</p>;
+  if (!service) 
+    return  <Loading></Loading>;
     return (
         <div>
              <header>
@@ -88,7 +90,7 @@ const ServiceDetails = () => {
       <p className="mt-5 text-sm text-gray-500">
         Shared by : 
       </p>
-      <Link to="/browse-tips" className='btn bg-indigo-400 text-white rounded-full my-8'>Back to Service page</Link>
+      <Link to="/services" className='btn bg-indigo-400 text-white rounded-full my-8'>Back to Service page</Link>
     </div>
   </div>
 </div>

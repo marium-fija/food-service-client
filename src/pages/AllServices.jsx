@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router';
+import Loading from './Loading';
 
 
 const AllServices = () => {
@@ -23,7 +24,7 @@ const AllServices = () => {
   }, []);
 
   if(loading) 
-    return <p className="text-center text-8xl mt-10">Loading...</p>;
+    return <Loading></Loading>;
     return (
         <section>
            <header>
