@@ -10,6 +10,7 @@ import AddService from '../pages/AddService';
 import ServiceDetails from '../pages/ServiceDetails';
 import ErrorPage from '../pages/ErrorPage';
 import MyServices from '../pages/MyServices';
+import MyReviews from '../pages/MyReviews';
 
 const route = createBrowserRouter([
     {
@@ -55,7 +56,7 @@ const route = createBrowserRouter([
     },
     {
         path: "/reviews",
-        element: <h1>my reviews</h1>
+        element: <MyReviews></MyReviews>
     },
     {
         path: "/*",

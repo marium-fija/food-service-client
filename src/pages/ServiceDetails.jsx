@@ -2,7 +2,9 @@ import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import AuthContext from '../provider/AuthContext';
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 
 const ServiceDetails = () => {
@@ -85,13 +87,14 @@ const ServiceDetails = () => {
       <p className="mt-5 text-sm text-gray-500">
         Shared by : 
       </p>
-      <Link to="/browse-tips" className='btn bg-teal-800 text-white rounded-full my-8'>Back to Browse tips</Link>
+      <Link to="/browse-tips" className='btn bg-indigo-400 text-white rounded-full my-8'>Back to Service page</Link>
     </div>
   </div>
 </div>
-<div>
+<div className='max-w-7xl mx-auto my-20 p-5'>
      {/* Reviews Section */}
-      <h3 className="text-xl font-bold mt-6">
+     <div className='bg-gray-100 p-4'>
+         <h3 className="text-xl font-bold my-3">
         Reviews ({service.reviews?.length || 0})
       </h3>
       <div className="space-y-3 mt-3">
@@ -105,12 +108,13 @@ const ServiceDetails = () => {
               />
               <span className="font-semibold">{r.userName}</span>
             </div>
-            <Rating initialRating={r.rating} readonly emptySymbol="☆" fullSymbol="★" />
+            {/* <Rating initialRating={r.rating} readonly emptySymbol="☆" fullSymbol="★" /> */}
             <p>{r.reviewText}</p>
             <small className="text-gray-500">{r.reviewDate}</small>
           </div>
         ))}
       </div>
+     </div>
 
       {/* Add Review Form */}
       <div className="mt-6">
@@ -123,12 +127,12 @@ const ServiceDetails = () => {
               value={reviewText}
               onChange={(e) => setReviewText(e.target.value)}
             ></textarea>
-            <Rating
+            {/* <Rating
               initialRating={rating}
               onClick={(value) => setRating(value)}
               emptySymbol="☆"
               fullSymbol="★"
-            />
+            /> */}
             <br />
             <button
               onClick={handleAddReview}
@@ -142,7 +146,7 @@ const ServiceDetails = () => {
             Please login to add a review.
           </p>
         )}
-</div>
+      </div>
 </div>
 <footer>
     <Footer></Footer>

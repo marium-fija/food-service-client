@@ -51,7 +51,7 @@ const AllServices = () => {
      <p className="text-gray-700 font-medium mb-2">Category: {service.category}</p>
                 <p className="text-gray-800 font-bold mb-4">Price: {service.price} BDT</p>
     <div className="card-actions justify-end">
-      <Link to="/services/:id" className='btn btn-soft btn-info rounded-2xl'>See Details</Link>
+      <Link to={`/services/${service._id}`} className='btn btn-soft btn-info rounded-2xl'>See Details</Link>
     </div>
   </div>
      </div>
