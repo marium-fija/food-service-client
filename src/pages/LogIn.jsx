@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router';
 import AuthContext from '../provider/AuthContext';
 import Swal from 'sweetalert2';
 import axios from 'axios';
+
 
 const LogIn = () => {
     const [error, setError] = useState("");
@@ -80,6 +81,7 @@ const LogIn = () => {
                             placeholder="Email"
                             required
                         />
+                        
                         {/* password  */}
                         <label className="label">Password</label>
                         <input

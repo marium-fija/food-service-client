@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import AuthContext from '../provider/AuthContext';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Rating from 'react-rating';
