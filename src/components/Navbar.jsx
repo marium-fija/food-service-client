@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import AuthContext from '../provider/AuthContext';
 import Swal from 'sweetalert2';
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/Logo (2).png';
 
 const Navbar = () => {
@@ -44,7 +44,7 @@ const Navbar = () => {
             <NavLink to="/myServices" className={({ isActive }) => isActive ? "text-cyan-500 font-semibold" : "font-medium"}>My Services</NavLink>
              </li>
           <li>
-            <NavLink to="/reviews" className={({ isActive }) => isActive ? "text-cyan-500 font-semibold" : "font-medium"}>My Reviews</NavLink>
+            <NavLink to="/my-reviews" className={({ isActive }) => isActive ? "text-cyan-500 font-semibold" : "font-medium"}>My Reviews</NavLink>
              </li>
         </>
       )}
@@ -77,10 +77,10 @@ const Navbar = () => {
   <div className="navbar-end gap-2">
     {!user ? (
           <div className='space-x-2'>
-            <NavLink to="/auth/login" className="btn  text-white bg-blue-400 rounded-full">
+            <NavLink to="/login" className="btn  text-white bg-blue-400 rounded-full">
             Login 
           </NavLink>
-          <NavLink to="/auth/register" className="btn  text-white bg-indigo-400 rounded-full">
+          <NavLink to="/register" className="btn  text-white bg-indigo-400 rounded-full">
             Register 
           </NavLink>
           </div>
