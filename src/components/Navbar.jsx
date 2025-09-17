@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import AuthContext from '../provider/AuthContext';
 import Swal from 'sweetalert2';
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/Logo (2).png';
 
 const Navbar = () => {

@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import 'flowbite';
 import route from './routes/route.jsx'
-import { RouterProvider } from 'react-router'
+import { RouterProvider } from 'react-router-dom'
 import AuthProvider from './provider/AuthProvider.jsx';
 
 

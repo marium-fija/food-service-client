@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
-import { Link, useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router-dom';
 import AuthContext from '../provider/AuthContext';
 import Swal from 'sweetalert2';
 import axios from 'axios';
