@@ -77,10 +77,10 @@ const Navbar = () => {
   <div className="navbar-end gap-2">
     {!user ? (
           <div className='space-x-2'>
-            <NavLink to="/login" className="btn  text-white bg-blue-400 rounded-full">
+            <NavLink to="/auth/login" className="btn  text-white bg-blue-400 rounded-full">
             Login 
           </NavLink>
-          <NavLink to="/register" className="btn  text-white bg-indigo-400 rounded-full">
+          <NavLink to="/auth/register" className="btn  text-white bg-indigo-400 rounded-full">
             Register 
           </NavLink>
           </div>
