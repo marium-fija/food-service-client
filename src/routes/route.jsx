@@ -26,44 +26,44 @@ const route = createBrowserRouter([
         ]
     },
     {
-        path: "/auth",
+        path: "auth",
         element: <AuthLayout></AuthLayout>,
         children: [
             {
-                path: "/auth/login",
+                path: "auth/login",
                 element: <LogIn></LogIn>,
             },
             {
-                path: "/auth/register",
+                path: "auth/register",
                 element: <Register></Register>
             },
         ]
     },
     {
-        path: "/services",
+        path: "services",
         element: <AllServices></AllServices>
     },
     {
-        path: "/addServices",
+        path: "addServices",
         element: 
         <PrivateRoute>
             <AddService></AddService>
         </PrivateRoute>   
     },
     {
-        path: "/services/:id",
+        path: "services/:id",
         element: <PrivateRoute>
             <ServiceDetails></ServiceDetails>
         </PrivateRoute>
     },
     {
-        path: "/myServices",
+        path: "myServices",
         element: <PrivateRoute>
             <MyServices></MyServices>
         </PrivateRoute>
     },
     {
-        path: "/reviews",
+        path: "reviews",
         element: <PrivateRoute>
             <MyReviews></MyReviews>
         </PrivateRoute>
