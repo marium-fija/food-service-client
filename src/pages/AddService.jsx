@@ -2,8 +2,7 @@ import axios from 'axios';
 import React, { useContext, useState } from 'react';
 import Swal from 'sweetalert2';
 import AuthContext from '../provider/AuthContext';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 
 const AddService = () => {
   const { user } = useContext(AuthContext);
@@ -58,9 +57,7 @@ const AddService = () => {
 
   return (
     <div>
-      <header>
-        <Navbar></Navbar>
-      </header>
+      
       <section className="py-12  min-h-screen">
         <div className="container mx-auto px-4 max-w-3xl bg-white  rounded-lg p-10">
           <h2 className="text-5xl text-indigo-900 font-bold mb-6 text-center">Add a New Service</h2>
@@ -126,17 +123,13 @@ const AddService = () => {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+              className="w-full btn btn-primary py-2 rounded-full "
             >
               Add Service
             </button>
           </form>
         </div>
       </section>
-
-      <footer>
-        <Footer></Footer>
-      </footer>
     </div>
   );
 };

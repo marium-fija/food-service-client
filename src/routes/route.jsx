@@ -12,6 +12,8 @@ import ErrorPage from '../pages/ErrorPage';
 import MyServices from '../pages/MyServices';
 import MyReviews from '../pages/MyReviews';
 import PrivateRoute from '../provider/PrivateRoute'
+import About from '../pages/About';
+import ForeignersGuide from '../pages/ForeignersGuide';
 
 const route = createBrowserRouter([
     {
@@ -22,32 +24,27 @@ const route = createBrowserRouter([
             {
                 path: "",
                 element: <Home></Home>
-            }
-        ]
-    },
-    {
-        path: "/auth",
-        element: <AuthLayout></AuthLayout>,
-        children: [
-            {
-                path: "login",
-                element: <LogIn></LogIn>,
             },
             {
-                path: "register",
-                element: <Register></Register>
-            },
-        ]
-    },
-    {
         path: "/services",
         element: <AllServices></AllServices>
+    },
+    {
+        path: "/about",
+        element: <About></About>
     },
     {
         path: "/addServices",
         element: 
         <PrivateRoute>
             <AddService></AddService>
+        </PrivateRoute>   
+    },
+    {
+        path: "/foreignersGuide",
+        element: 
+        <PrivateRoute>
+            <ForeignersGuide></ForeignersGuide>
         </PrivateRoute>   
     },
     {
@@ -68,6 +65,23 @@ const route = createBrowserRouter([
             <MyReviews></MyReviews>
         </PrivateRoute>
     },
+        ]
+    },
+    {
+        path: "/auth",
+        element: <AuthLayout></AuthLayout>,
+        children: [
+            {
+                path: "login",
+                element: <LogIn></LogIn>,
+            },
+            {
+                path: "register",
+                element: <Register></Register>
+            },
+        ]
+    },
+    
     {
         path: "/*",
         element: <ErrorPage></ErrorPage>

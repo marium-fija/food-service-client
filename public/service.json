@@ -1,0 +1,187 @@
+[
+  {
+    "foodImg": "https://i.ibb.co/W479BBRX/Chicken-Bucket.jpg",
+    "foodTitle": "Chicken Bucket",
+    "restaurantName": "KFC",
+    "website": "https://www.kfc.com.bd",
+    "description": "Crunchy fried chicken with KFC's special herbs and spices.",
+    "category": "Fast Food",
+    "price": 850,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Rifat Hasan", "userPhoto": "https://i.ibb.co/DH0XPSFZ/boy-3.jpg", "rating": 5, "reviewText": "Perfectly crispy and juicy." },
+      { "userName": "Nafisa Chowdhury", "userPhoto": "https://i.ibb.co/bjxYGhx6/girl-5.jpg", "rating": 4, "reviewText": "Good taste, but a bit too oily." },
+      { "userName": "Tanvir Ahmed", "userPhoto": "https://i.ibb.co/chd0BNM7/boy-2.jpg", "rating": 5, "reviewText": "Best fried chicken experience in Dhaka!" }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/4nSzS3N0/pizza.jpg",
+    "foodTitle": "Cheese Pizza",
+    "restaurantName": "Pizza Hut",
+    "website": "https://www.pizzahut.com.bd",
+    "description": "Classic cheese pizza with a soft crust and generous cheese topping.",
+    "category": "Fast Food",
+    "price": 1200,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Sadia Rahman", "userPhoto": "https://i.ibb.co/FLwpZs4G/girl-6.jpg", "rating": 5, "reviewText": "Melty cheese and perfect crust! Loved it." },
+      { "userName": "Imran Khan", "userPhoto": "https://i.ibb.co/yByMgr8k/boy-6.jpg", "rating": 4, "reviewText": "Very tasty, but slightly expensive." },
+      { "userName": "Programming-Hero Instructors", "userPhoto": "https://lh3.googleusercontent.com/a/ACg8ocKUMU3XIX-JSUB80Gj_bYIWfYudpi", "rating": 4, "reviewText": "Test" }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/HTLmwLKh/sandwich.jpg",
+    "foodTitle": "Veggie Sandwich",
+    "restaurantName": "Gloria Jean's Coffees",
+    "website": "https://www.gjcoffeesbd.com",
+    "description": "Fresh veggie sandwich with cheese, tomato, cucumber and sauces.",
+    "category": "Sandwich",
+    "price": 450,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Mahin Hossain", "userPhoto": "https://i.ibb.co/yBnHD2cS/boy-5.jpg", "rating": 5, "reviewText": "Healthy and tasty! Great for lunch." },
+      { "userName": "Rumana Akter", "userPhoto": "https://i.ibb.co/bjxYGhx6/girl-5.jpg", "rating": 4, "reviewText": "Very fresh ingredients, loved the taste." }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/d051bf8n/pasta.jpg",
+    "foodTitle": "Alfredo Pasta",
+    "restaurantName": "Pizza Inn",
+    "website": "https://www.pizzainn.com.bd",
+    "description": "Creamy Alfredo pasta with tender chicken and mushrooms.",
+    "category": "Pasta",
+    "price": 900,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Rashid Ali", "userPhoto": "https://i.ibb.co/V0Qq6sQj/boy-7.jpg", "rating": 5, "reviewText": "Perfectly creamy and delicious!" },
+      { "userName": "Shabnam Akter", "userPhoto": "https://i.ibb.co/0RQfvqPR/girl-4.jpg", "rating": 4, "reviewText": "Very tasty, but a bit heavy." }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/VcZfGZ39/Screenshot-2025-09-13-234423.png",
+    "foodTitle": "Kacchi Biryani",
+    "restaurantName": "Kacchi Vai",
+    "website": "https://www.kacchivai.com.bd",
+    "description": "Traditional Kacchi Biryani with tender mutton and aromatic spices.",
+    "category": "Biryani",
+    "price": 600,
+    "location": "Old Dhaka",
+    "reviews": [
+      { "userName": "Fahim Reza", "userPhoto": "https://i.ibb.co/chd0BNM7/boy-2.jpg", "rating": 5, "reviewText": "Absolutely delicious, best Biryani in town!" },
+      { "userName": "Tania Akter", "userPhoto": "https://i.ibb.co/Y46NMqkc/girl-1.jpg", "rating": 5, "reviewText": "Loved the spices and mutton, perfect taste." },
+      { "userName": "hablu", "userPhoto": "https://i.ibb.co.com/JW3pTFJ6/1.png", "rating": 3, "reviewText": "best kachhi ever" }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/qLVPnjby/cheese-cake.jpg",
+    "foodTitle": "Cheesecake",
+    "restaurantName": "The Coffee Bean",
+    "website": "https://www.coffeebeanbd.com",
+    "description": "Soft and creamy cheesecake with a buttery crust.",
+    "category": "Dessert",
+    "price": 550,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Rafiq Hossain", "userPhoto": "https://i.ibb.co/yByMgr8k/boy-6.jpg", "rating": 5, "reviewText": "Smooth and delicious, just perfect!" },
+      { "userName": "Nabila Yasmin", "userPhoto": "https://i.ibb.co/Q7FwtXNv/girl-3.jpg", "rating": 4, "reviewText": "Very tasty, portion size could be bigger." }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/0RGYP47b/wings.jpg",
+    "foodTitle": "Chicken Wings",
+    "restaurantName": "Chilox",
+    "website": "https://www.chilox.com.bd",
+    "description": "Spicy and tangy chili chicken, perfect with fried rice.",
+    "category": "Chinese",
+    "price": 650,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Arif Chowdhury", "userPhoto": "https://i.ibb.co/7NtmjfQ8/boy-1.jpg", "rating": 5, "reviewText": "Best chicken Wings ever!" },
+      { "userName": "Samira Akter", "userPhoto": "https://i.ibb.co/Y46NMqkc/girl-1.jpg", "rating": 4, "reviewText": "Very tasty, loved the spice." }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/994CgXqb/capuccino.jpg",
+    "foodTitle": "Cappuccino",
+    "restaurantName": "Tabaq Coffee",
+    "website": "https://www.northendcoffee.com.bd",
+    "description": "Rich and frothy cappuccino made from premium coffee beans.",
+    "category": "Beverage",
+    "price": 350,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Hasan Mahmud", "userPhoto": "https://i.ibb.co/chd0BNM7/boy-2.jpg", "rating": 5, "reviewText": "Perfect coffee taste with rich froth!" },
+      { "userName": "Lina Rahman", "userPhoto": "https://i.ibb.co/Y46NMqkc/girl-1.jpg", "rating": 4, "reviewText": "Tasty, but could be slightly stronger." }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/SXSx3YrB/Burger.jpg",
+    "foodTitle": "Beef Burger",
+    "restaurantName": "Burger King",
+    "website": "https://www.burgerking.com.bd",
+    "description": "Juicy beef patty with fresh lettuce, tomato, and special sauce.",
+    "category": "Fast Food",
+    "price": 400,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Rana Das", "userPhoto": "https://i.ibb.co/DH0XPSFZ/boy-3.jpg", "rating": 5, "reviewText": "Classic burger taste, very satisfying!" },
+      { "userName": "Tanjila Akter", "userPhoto": "https://i.ibb.co/Q7FwtXNv/girl-3.jpg", "rating": 4, "reviewText": "Very good, buns could be softer." }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/zWJPW99k/Fried-Fish-2.jpg",
+    "foodTitle": "Fried Fish",
+    "restaurantName": "Star Kabab & Restaurant",
+    "website": "https://www.starkabab.com.bd",
+    "description": "Crispy fried fish with spicy sauce and fresh herbs.",
+    "category": "Seafood",
+    "price": 500,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Shakil Ahmed", "userPhoto": "https://i.ibb.co/yBnHD2cS/boy-5.jpg", "rating": 5, "reviewText": "Crispy and perfectly seasoned!" },
+      { "userName": "Nazia Akter", "userPhoto": "https://i.ibb.co/0RQfvqPR/girl-4.jpg", "rating": 4, "reviewText": "Very tasty, but could use more sauce." }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/p6dkhQHg/Chicken-Shawarma.jpg",
+    "foodTitle": "Chicken Shawarma",
+    "restaurantName": "Shawarma House",
+    "website": "https://www.shawarmahousebd.com",
+    "description": "Soft flatbread wrapped around spiced grilled chicken and veggies.",
+    "category": "Middle Eastern",
+    "price": 350,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Fahad Islam", "userPhoto": "https://i.ibb.co/yByMgr8k/boy-6.jpg", "rating": 5, "reviewText": "Perfectly spiced and very juicy!" },
+      { "userName": "Rina Yasmin", "userPhoto": "https://i.ibb.co/bjxYGhx6/girl-5.jpg", "rating": 4, "reviewText": "Very good taste, love the sauces." }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co/twvWwxfB/Chocolate-Brownie.jpg",
+    "foodTitle": "Chocolate Brownie",
+    "restaurantName": "North End Coffee Roasters",
+    "website": "https://www.northendcoffee.com.bd",
+    "description": "Rich and fudgy chocolate brownie with a soft center.",
+    "category": "Dessert",
+    "price": 250,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "Arman Hossain", "userPhoto": "https://i.ibb.co/V0Qq6sQj/boy-7.jpg", "rating": 5, "reviewText": "So chocolatey and soft, loved every bite!" },
+      { "userName": "Shirin Akter", "userPhoto": "https://i.ibb.co/FLwpZs4G/girl-6.jpg", "rating": 4, "reviewText": "Very tasty, perfect with coffee." }
+    ]
+  },
+  {
+    "foodImg": "https://i.ibb.co.com/994CgXqb/capuccino.jpg",
+    "foodTitle": "Tea",
+    "restaurantName": "Fija's Cafe",
+    "website": "http://www.fijas-cafe.com",
+    "description": "Here you can find most delicious tea ever.",
+    "category": "Drink",
+    "price": 150,
+    "location": "Dhaka",
+    "reviews": [
+      { "userName": "hablu", "userPhoto": "https://i.ibb.co.com/JW3pTFJ6/1.png", "rating": 4, "reviewText": "Fija r cha sob cha besi shera" },
+      { "userName": "fifi", "userPhoto": "https://lh3.googleusercontent.com/a/ACg8ocILFK9A39PRGoq2VAL4Wx8-LMvj59…", "rating": 2, "reviewText": "very good" }
+    ]
+  }
+]

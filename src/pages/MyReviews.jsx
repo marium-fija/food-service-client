@@ -2,8 +2,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import AuthContext from '../provider/AuthContext';
 import axios from 'axios';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { TiDelete } from "react-icons/ti";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import Loading from './Loading';
@@ -64,9 +62,7 @@ const MyReviews = () => {
     return <Loading></Loading>;
     return (
         <div>
-            <header>
-                <Navbar></Navbar>
-            </header>
+            
             <div className="max-w-4xl mx-auto my-10 px-5">
         <h2 className="text-4xl font-bold mb-8">My Reviews</h2>
 
@@ -81,11 +77,11 @@ const MyReviews = () => {
                 <p><strong>Rating : </strong> {review.rating}</p>
                 <div className="flex space-x-2">
                   <button
-                    className="bg-blue-900 text-white px-3 py-1 rounded-full flex justify-center items-center gap-2"
+                    className="btn btn-primary rounded-full flex justify-center items-center gap-2"
                     onClick={() => handleUpdate(review)}
                   >Update <MdOutlineTipsAndUpdates /></button>
                   <button
-                    className="bg-pink-700 text-white px-3 py-1 rounded-full flex justify-center items-center gap-2"
+                    className="btn btn-soft btn-primary rounded-full flex justify-center items-center gap-2"
                     onClick={() => handleDelete(review.serviceId, review.reviewId)}
                   >Delete <TiDelete size={20}/></button>
                 </div>
@@ -126,9 +122,6 @@ const MyReviews = () => {
           </div>
         )}
       </div>
-      <footer>
-        <Footer></Footer>
-      </footer>
         </div>
     );
 };

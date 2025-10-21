@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+
 import { Link } from 'react-router-dom';
 import Loading from './Loading';
 
@@ -27,9 +26,7 @@ const AllServices = () => {
     return <Loading></Loading>;
     return (
         <section>
-           <header>
-            <Navbar></Navbar>
-           </header>
+           
             <div className='my-20 max-w-7xl mx-auto'>
                 <h2 className="text-5xl text-green-950 font-bold mb-8 text-center">All Services</h2>
                 <p className='text-xl font-bold text-center mb-10'>You can see our all services . what we are provided for ours users...</p>
@@ -61,9 +58,6 @@ const AllServices = () => {
                 </div>
            
             </div>
-           <footer>
-            <Footer></Footer>
-           </footer>
         </section>
     );
 };

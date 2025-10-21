@@ -24,7 +24,7 @@ const LogIn = () => {
                     email: result.user.email,
                     lastSignInTime: new Date().toISOString()
                 };
-                axios.patch("https://food-service-server-sigma.vercel.app/auth/login", userInfo)
+                axios.patch("https://food-service-server-sigma.vercel.app/users", userInfo)
                     .then(() => {
                         Swal.fire("Success!", "Login Successful!", "success");
                         navigate(location.state?.from || "/");

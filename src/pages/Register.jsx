@@ -59,7 +59,7 @@ const Register = () => {
 };
 
                    
-                    axios.post("https://food-service-server-sigma.vercel.app/auth/register", userProfile)
+                    axios.post("https://food-service-server-sigma.vercel.app/users", userProfile)
                         .then(res => {
                             Swal.fire({
                                 icon: "success",

@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
+import Loading from '../pages/Loading';
 
 const FeaturedServices = () => {
     const [services, setServices] = useState([]);
@@ -20,7 +21,7 @@ const FeaturedServices = () => {
   }, []);
 
   if(loading)
-    return  <p className="text-center mt-10 text-7xl">Loading...</p>;
+    return  <Loading></Loading>;
 
     return (
         <section className="mt-10 py-12 bg-gray-100">

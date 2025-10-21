@@ -2,8 +2,6 @@ import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import AuthContext from '../provider/AuthContext';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { TiDelete } from "react-icons/ti";
 import { MdOutlineTipsAndUpdates } from "react-icons/md";
 import Loading from './Loading';
@@ -66,9 +64,7 @@ const MyServices = () => {
     return <Loading></Loading>;
     return (
         <div>
-            <header>
-                <Navbar></Navbar>
-            </header>
+            
             <div className="max-w-7xl mx-auto my-10 px-5">
       <h2 className="text-4xl font-bold mb-8">My Services</h2>
 
@@ -97,11 +93,11 @@ const MyServices = () => {
                 <td className=" px-4 py-2  ">
                   <div className='space-y-2 lg:flex gap-3 justify-center'>
                     <button
-                    className="bg-purple-500 text-white p-2 flex justify-center items-center gap-2 rounded-full"
+                    className="btn btn-primary flex justify-center items-center gap-2 rounded-full"
                     onClick={() => handleUpdate(service)}
                   >Update <MdOutlineTipsAndUpdates /></button>
                   <button
-                    className="bg-rose-500 text-white p-2  rounded-full flex justify-center items-center gap-2"
+                    className="btn btn-soft btn-primary  rounded-full flex justify-center items-center gap-2"
                     onClick={() => handleDelete(service._id)}
                   >Delete <TiDelete size={20}/></button>
                   </div>
@@ -153,9 +149,6 @@ const MyServices = () => {
         </div>
       )}
     </div>
-    <footer>
-        <Footer></Footer>
-    </footer>
         </div>
     );
 };

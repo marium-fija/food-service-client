@@ -35,10 +35,17 @@ const Navbar = () => {
       <li>
         <NavLink to="/services" className={({ isActive }) => isActive ? "text-cyan-500 font-semibold" : "font-medium" }>Services</NavLink>
       </li>
+      <li>
+        <NavLink to="/about" className={({ isActive }) => isActive ? "text-cyan-500 font-semibold" : "font-medium" }>Why choose YumBit</NavLink>
+      </li>
+        
       {user && (
         <>
           <li>
             <NavLink to="/addServices" className={({ isActive }) => isActive ? "text-cyan-500 font-semibold" : "font-medium" }> Add Service</NavLink>
+          </li>
+          <li>
+            <NavLink to="/foreignersGuide" className={({ isActive }) => isActive ? "text-cyan-500 font-semibold" : "font-medium" }> Food Guide </NavLink>
           </li>
           <li>
             <NavLink to="/myServices" className={({ isActive }) => isActive ? "text-cyan-500 font-semibold" : "font-medium"}>My Services</NavLink>
@@ -51,8 +58,8 @@ const Navbar = () => {
     </>
   );
     return (
-            <div className=''>
-           <div className="navbar bg-base-100 shadow-sm px-6">
+            <div className='sticky top-0 z-50 shadow-md'>
+           <div className="navbar bg-base-100 px-6">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -77,10 +84,10 @@ const Navbar = () => {
   <div className="navbar-end gap-2">
     {!user ? (
           <div className='space-x-2'>
-            <NavLink to="/auth/login" className="btn  text-white bg-blue-400 rounded-full">
+            <NavLink to="/auth/login" className="btn bg-blue-400 text-white rounded-full">
             Login 
           </NavLink>
-          <NavLink to="/auth/register" className="btn  text-white bg-indigo-400 rounded-full">
+          <NavLink to="/auth/register" className="btn bg-indigo-400 text-white rounded-full">
             Register 
           </NavLink>
           </div>
@@ -103,7 +110,7 @@ const Navbar = () => {
                 <p className="font-medium">{user.displayName}</p>
               </li>
               <li>
-                <button onClick={handleLogout} className="btn bg-cyan-800 text-white">
+                <button onClick={handleLogout} className="btn btn-primary rounded-full">
                   Logout
                 </button>
               </li>

@@ -3,8 +3,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import AuthContext from '../provider/AuthContext';
 import { Link, useParams } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import Rating from 'react-rating';
 import Loading from './Loading';
 
@@ -70,9 +68,6 @@ const ServiceDetails = () => {
     return  <Loading></Loading>;
     return (
         <div>
-             <header>
-                <Navbar></Navbar>
-            </header>
         <div className='max-w-7xl mx-auto my-20 px-5'> 
             <h2 className="text-5xl font-bold mb-10 text-center">Tip Detail Of <span className='text-pink-800'>{service.foodTitle}</span></h2>     
   <div className="card lg:card-side bg-base-100 shadow-lg mb-20">
@@ -90,7 +85,7 @@ const ServiceDetails = () => {
       <p className="mt-5 text-sm text-gray-500">
         Shared by : 
       </p>
-      <Link to="/services" className='btn bg-indigo-400 text-white rounded-full my-8'>Back to Service page</Link>
+      <Link to="/services" className='btn btn-primary rounded-full my-8'>Back to Service page</Link>
     </div>
   </div>
 </div>
@@ -156,9 +151,6 @@ const ServiceDetails = () => {
         )}
       </div>
 </div>
-<footer>
-    <Footer></Footer>
-</footer>
         </div>
     );
 };
