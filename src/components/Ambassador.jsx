@@ -3,6 +3,7 @@ import ambassador from "../assets/ambassador.jpg"
 import { FaCrown } from 'react-icons/fa';
 import { VscDebugBreakpointData } from "react-icons/vsc";
 import { IoArrowRedoSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const Ambassador = () => {
     return (
@@ -38,9 +39,9 @@ const Ambassador = () => {
           </ul>
         </div>
 
-        <button className="btn btn-primary rounded-3xl">
+        <Link to="/ambassador-apply" className="btn btn-primary rounded-3xl">
           Apply Now <IoArrowRedoSharp size={20}/>
-        </button>
+        </Link>
       </div>
 
       {/* Right Image */}

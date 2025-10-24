@@ -14,6 +14,7 @@ import MyReviews from '../pages/MyReviews';
 import PrivateRoute from '../provider/PrivateRoute'
 import About from '../pages/About';
 import ForeignersGuide from '../pages/ForeignersGuide';
+import AmbassadorApply from '../pages/AmbassadorApply';
 
 const route = createBrowserRouter([
     {
@@ -45,6 +46,13 @@ const route = createBrowserRouter([
         element: 
         <PrivateRoute>
             <ForeignersGuide></ForeignersGuide>
+        </PrivateRoute>   
+    },
+    {
+        path: "/ambassador-apply",
+        element: 
+        <PrivateRoute>
+            <AmbassadorApply></AmbassadorApply>
         </PrivateRoute>   
     },
     {
